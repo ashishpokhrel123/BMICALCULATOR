@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calcutor"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingLeft="100dp"
+        android:textSize="40sp"
+        android:textColor="@android:color/background_dark"
+        />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt1"
+        android:paddingLeft="40dp"
+        android:text="Enter weight(Kg) and Height (m) "
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/wtg"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/txt2"
+        android:gravity="center"
+        android:paddingLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+       android:layout_below="@id/wtg"
+        android:text="WEIGHT (KG)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/ht"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/wtg"
+        android:layout_below="@id/txt2"
+        android:gravity="center"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_toRightOf="@id/tv3"
+        android:layout_below="@id/ht"
+        android:layout_marginLeft="40sp"
+        android:text="height (cm)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+    <TextView
+        android:id="@+id/bmires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="90dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+
+        android:layout_below="@id/tv4"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/bmical"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculate"
+        android:layout_below="@id/wtg"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="200dp"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

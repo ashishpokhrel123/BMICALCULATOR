@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BMICalcutor</string>
+    <string name="underweight" />
+    <string name="overweight" />
+    <string name="normal" />
+
+</resources>
