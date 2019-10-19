@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (st2 != null && !"".equals(st2)
                 && st1 != null && !"".equals(st1)) {
-            float heightValue = Float.parseFloat(st2) / 100;
+            float heightValue = Float.parseFloat(st2) ;
             float weightValue = Float.parseFloat(st1);
 
             float bmi = weightValue / (heightValue * heightValue);
@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             category ="Overweight";
         }
         category = bmi + "\n\n" + category;
-        result.setText(category);
+        result.setText("BMI="+category);
+
 
     }
 
