@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void displayBMI (float bmi) {
         String category;
-        if (bmi < 18) {
+        if (bmi < 18f) {
             category = " underweight";
-        } else if (bmi >=18 && bmi <= 24) {
+        } else if (bmi >=18f && bmi <= 25f) {
             category = "Normal";
 
         } else {
